@@ -1,0 +1,533 @@
+[INFO ][20171108 13:52:55,780][?:?] using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[INFO ][20171108 13:52:55,877][Main:58]  [DUBBO] Use container type([spring]) to run dubbo serivce., dubbo version: 2.8.4, current host: 127.0.0.1
+[INFO ][20171108 13:52:56,065][AbstractApplicationContext:510] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6ad5c04e: startup date [Wed Nov 08 13:52:56 CST 2017]; root of context hierarchy
+[INFO ][20171108 13:52:56,160][XmlBeanDefinitionReader:315] Loading XML bean definitions from URL [jar:file:/E:/kay_project/dubbox+rest/duboo-hello/dubbo-hello-user-provider/target/dubbo-hello-user-provider.jar!/META-INF/spring/spring-context.xml]
+[ERROR][20171108 13:52:56,725][Main:86]  [DUBBO] IOException parsing XML document from URL [jar:file:/E:/kay_project/dubbox+rest/duboo-hello/dubbo-hello-user-provider/target/dubbo-hello-user-provider.jar!/META-INF/spring/spring-context.xml]; nested exception is com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 3 字节的 UTF-8 序列的字节 3 无效。, dubbo version: 2.8.4, current host: 127.0.0.1
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from URL [jar:file:/E:/kay_project/dubbox+rest/duboo-hello/dubbo-hello-user-provider/target/dubbo-hello-user-provider.jar!/META-INF/spring/spring-context.xml]; nested exception is com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 3 字节的 UTF-8 序列的字节 3 无效。
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:408)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:243)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:127)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:93)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:537)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:451)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:50)
+	at com.alibaba.dubbo.container.Main.main(Main.java:80)
+Caused by: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 3 字节的 UTF-8 序列的字节 3 无效。
+	at com.sun.org.apache.xerces.internal.impl.io.UTF8Reader.invalidByte(UTF8Reader.java:691)
+	at com.sun.org.apache.xerces.internal.impl.io.UTF8Reader.read(UTF8Reader.java:435)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.load(XMLEntityScanner.java:1743)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.scanData(XMLEntityScanner.java:1242)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.scanComment(XMLScanner.java:778)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanComment(XMLDocumentFragmentScannerImpl.java:1038)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2988)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:117)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:348)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:75)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:388)
+	... 15 more
+[INFO ][20171108 14:04:55,691][?:?] using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[INFO ][20171108 14:04:55,725][Main:58]  [DUBBO] Use container type([spring]) to run dubbo serivce., dubbo version: 2.8.4, current host: 127.0.0.1
+[INFO ][20171108 14:04:55,783][AbstractApplicationContext:510] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6ad5c04e: startup date [Wed Nov 08 14:04:55 CST 2017]; root of context hierarchy
+[INFO ][20171108 14:04:55,823][XmlBeanDefinitionReader:315] Loading XML bean definitions from URL [jar:file:/E:/kay_project/dubbox+rest/duboo-hello/dubbo-hello-user-provider/target/dubbo-hello-user-provider.jar!/META-INF/spring/spring-context.xml]
+[ERROR][20171108 14:04:55,924][Main:86]  [DUBBO] IOException parsing XML document from URL [jar:file:/E:/kay_project/dubbox+rest/duboo-hello/dubbo-hello-user-provider/target/dubbo-hello-user-provider.jar!/META-INF/spring/spring-context.xml]; nested exception is com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 3 字节的 UTF-8 序列的字节 3 无效。, dubbo version: 2.8.4, current host: 127.0.0.1
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from URL [jar:file:/E:/kay_project/dubbox+rest/duboo-hello/dubbo-hello-user-provider/target/dubbo-hello-user-provider.jar!/META-INF/spring/spring-context.xml]; nested exception is com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 3 字节的 UTF-8 序列的字节 3 无效。
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:408)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:243)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:127)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:93)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:537)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:451)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:50)
+	at com.alibaba.dubbo.container.Main.main(Main.java:80)
+Caused by: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 3 字节的 UTF-8 序列的字节 3 无效。
+	at com.sun.org.apache.xerces.internal.impl.io.UTF8Reader.invalidByte(UTF8Reader.java:691)
+	at com.sun.org.apache.xerces.internal.impl.io.UTF8Reader.read(UTF8Reader.java:435)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.load(XMLEntityScanner.java:1743)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.scanData(XMLEntityScanner.java:1242)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.scanComment(XMLScanner.java:778)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanComment(XMLDocumentFragmentScannerImpl.java:1038)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2988)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:117)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:348)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:75)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:388)
+	... 15 more
+[INFO ][20171108 14:17:11,389][?:?] using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[INFO ][20171108 14:17:11,422][Main:58]  [DUBBO] Use container type([spring]) to run dubbo serivce., dubbo version: 2.8.4, current host: 127.0.0.1
+[INFO ][20171108 14:17:11,486][AbstractApplicationContext:510] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6ad5c04e: startup date [Wed Nov 08 14:17:11 CST 2017]; root of context hierarchy
+[INFO ][20171108 14:17:11,526][XmlBeanDefinitionReader:315] Loading XML bean definitions from URL [jar:file:/E:/kay_project/dubbox+rest/duboo-hello/dubbo-hello-user-provider/target/dubbo-hello-user-provider.jar!/META-INF/spring/spring-context.xml]
+[INFO ][20171108 14:17:11,739][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/dubbo-provider.xml]
+[INFO ][20171108 14:17:11,817][DefaultListableBeanFactory:670] Overriding bean definition for bean 'userService': replacing [Generic bean: class [com.emep.dubbo.demo.service.impl.UserServiceImpl]; scope=singleton; abstract=false; lazyInit=false; autowireMode=1; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:file:/E:/kay_project/dubbox+rest/duboo-hello/dubbo-hello-user-provider/target/dubbo-hello-user-provider.jar!/com/emep/dubbo/demo/service/impl/UserServiceImpl.class]] with [Generic bean: class [com.emep.dubbo.demo.service.impl.UserServiceImpl]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/dubbo-provider.xml]]
+[INFO ][20171108 14:17:11,920][DefaultListableBeanFactory:603] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@275710fc: defining beans [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor#0,userDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,userService,demo-provider,com.alibaba.dubbo.config.RegistryConfig,rest,com.emep.dubbo.demo.service.UserService,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20171108 14:17:12,084][ServiceBean:108]  [DUBBO] The service ready on spring started. service: com.emep.dubbo.demo.service.UserService, dubbo version: 2.8.4, current host: 127.0.0.1
+[INFO ][20171108 14:17:12,327][ServiceConfig:518]  [DUBBO] Export dubbo service com.emep.dubbo.demo.service.UserService to local registry, dubbo version: 2.8.4, current host: 127.0.0.1
+[INFO ][20171108 14:17:12,343][ServiceConfig:474]  [DUBBO] Export dubbo service com.emep.dubbo.demo.service.UserService to url rest://172.16.10.134:8888/restDemo/com.emep.dubbo.demo.service.UserService?accepts=500&anyhost=true&application=demo-provider&dubbo=2.8.4&extension=com.alibaba.dubbo.rpc.protocol.rest.support.LoggingFilter&generic=false&interface=com.emep.dubbo.demo.service.UserService&methods=getUsers,getUser&organization=dubbox&owner=programmer&pid=10196&revision=0.0.1-SNAPSHOT&server=tomcat&side=provider&threads=500&timestamp=1510121832226&validation=true, dubbo version: 2.8.4, current host: 127.0.0.1
+[INFO ][20171108 14:17:12,359][ServiceConfig:485]  [DUBBO] Register dubbo service com.emep.dubbo.demo.service.UserService url rest://172.16.10.134:8888/restDemo/com.emep.dubbo.demo.service.UserService?accepts=500&anyhost=true&application=demo-provider&dubbo=2.8.4&extension=com.alibaba.dubbo.rpc.protocol.rest.support.LoggingFilter&generic=false&interface=com.emep.dubbo.demo.service.UserService&methods=getUsers,getUser&organization=dubbox&owner=programmer&pid=10196&revision=0.0.1-SNAPSHOT&server=tomcat&side=provider&threads=500&timestamp=1510121832226&validation=true to registry registry://172.16.10.135:2184/com.alibaba.dubbo.registry.RegistryService?application=demo-provider&check=false&dubbo=2.8.4&organization=dubbox&owner=programmer&pid=10196&registry=zookeeper&timestamp=1510121832089, dubbo version: 2.8.4, current host: 127.0.0.1
+[INFO ][20171108 14:17:13,612][AbstractRegistry:232]  [DUBBO] Load registry store file C:\Users\Administrator\.dubbo\dubbo-registry-172.16.10.135.cache, data: {com.emep.dubbo.demo.service.UserService=empty://172.16.10.134:8888/restDemo/com.emep.dubbo.demo.service.UserService?accepts=500&anyhost=true&application=demo-provider&category=configurators&check=false&dubbo=2.0.0&extension=com.alibaba.dubbo.rpc.protocol.rest.support.LoggingFilter&generic=false&interface=com.emep.dubbo.demo.service.UserService&methods=getUsers,getUser&organization=dubbox&owner=programmer&pid=7336&server=tomcat&side=provider&threads=500&timestamp=1510038235052&validation=true, annotationConfig/com.alibaba.dubbo.demo.user.facade.UserRestService=empty://172.16.10.134:20880/com.alibaba.dubbo.demo.user.facade.UserRestService?anyhost=true&application=demo-provider&category=configurators&check=false&dubbo=2.8.4&generic=false&group=annotationConfig&interface=com.alibaba.dubbo.demo.user.facade.UserRestService&methods=getUser,registerUser&optimizer=com.alibaba.dubbo.demo.SerializationOptimizerImpl&organization=dubbox&owner=programmer&pid=11852&revision=2.8.4&serialization=jackson&side=provider&timestamp=1510023032162&validation=true, com.alibaba.dubbo.demo.user.facade.UserRestService=empty://172.16.10.134:8888/services/com.alibaba.dubbo.demo.user.facade.UserRestService?accepts=500&anyhost=true&application=demo-provider&category=configurators&check=false&dubbo=2.8.4&extension=com.alibaba.dubbo.demo.extension.TraceInterceptor,                     com.alibaba.dubbo.demo.extension.TraceFilter,                     com.alibaba.dubbo.demo.extension.ClientTraceFilter,                     com.alibaba.dubbo.demo.extension.DynamicTraceBinding,                     com.alibaba.dubbo.demo.extension.CustomExceptionMapper,                     com.alibaba.dubbo.rpc.protocol.rest.support.LoggingFilter&generic=false&interface=com.alibaba.dubbo.demo.user.facade.UserRestService&methods=getUser,registerUser&organization=dubbox&owner=programmer&pid=11852&revision=2.8.4&server=tomcat&side=provider&threads=500&timestamp=1510023036315&validation=true, com.alibaba.dubbo.demo.user.facade.AnotherUserRestService=empty://172.16.10.134:8888/services/com.alibaba.dubbo.demo.user.facade.AnotherUserRestService?accepts=500&anyhost=true&application=demo-provider&category=configurators&check=false&connections=100&dubbo=2.8.4&extension=com.alibaba.dubbo.demo.extension.TraceInterceptor,                     com.alibaba.dubbo.demo.extension.TraceFilter,                     com.alibaba.dubbo.demo.extension.ClientTraceFilter,                     com.alibaba.dubbo.demo.extension.DynamicTraceBinding,                     com.alibaba.dubbo.demo.extension.CustomExceptionMapper,                     com.alibaba.dubbo.rpc.protocol.rest.support.LoggingFilter&generic=false&interface=com.alibaba.dubbo.demo.user.facade.AnotherUserRestService&methods=getUser,registerUser&organization=dubbox&owner=programmer&pid=11852&revision=2.8.4&server=tomcat&side=provider&threads=500&timeout=2000&timestamp=1510023036809&validation=true, com.alibaba.dubbo.demo.bid.BidService=empty://172.16.10.134:20880/com.alibaba.dubbo.demo.bid.BidService?anyhost=true&application=demo-provider&category=configurators&check=false&dubbo=2.8.4&generic=false&interface=com.alibaba.dubbo.demo.bid.BidService&methods=throwNPE,bid&optimizer=com.alibaba.dubbo.demo.SerializationOptimizerImpl&organization=dubbox&owner=programmer&pid=11852&revision=2.8.4&serialization=jackson&side=provider&timestamp=1510023034560, xmlConfig/com.alibaba.dubbo.demo.user.UserService=empty://172.16.10.134:20880/com.alibaba.dubbo.demo.user.UserService?anyhost=true&application=demo-provider&category=configurators&check=false&dubbo=2.8.4&generic=false&group=xmlConfig&interface=com.alibaba.dubbo.demo.user.UserService&methods=getUser,registerUser&optimizer=com.alibaba.dubbo.demo.SerializationOptimizerImpl&organization=dubbox&owner=programmer&pid=11852&revision=2.8.4&serialization=jackson&side=provider&timestamp=1510023035280}, dubbo version: 2.8.4, current host: 127.0.0.1
+[INFO ][20171108 14:17:13,625][ZkEventThread:64] Starting ZkClient event thread.
+[INFO ][20171108 14:17:13,635][Environment:100] Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+[INFO ][20171108 14:17:13,636][Environment:100] Client environment:host.name=human-PC
+[INFO ][20171108 14:17:13,636][Environment:100] Client environment:java.version=1.8.0_45
+[INFO ][20171108 14:17:13,637][Environment:100] Client environment:java.vendor=Oracle Corporation
+[INFO ][20171108 14:17:13,638][Environment:100] Client environment:java.home=E:\Java\jdk1.8.0_45\jre
+[INFO ][20171108 14:17:13,639][Environment:100] Client environment:java.class.path=dubbo-hello-user-provider.jar
+[INFO ][20171108 14:17:13,639][Environment:100] Client environment:java.library.path=E:\Java\jdk1.8.0_45\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;.;E:/Java/jdk1.8.0_45\bin;C:\Program Files (x86)\Common Files\NetSarang;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;D:\dev\gradle-2.4\bin;D:\dev\Git\cmd;D:/maven\bin;F:\daydayup\btrace\window\bin;C:\Program Files (x86)\Skype\Phone\;D:\dev\openresty-1.11.2.3-win32;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Microsoft VS Code\bin;.
+[INFO ][20171108 14:17:13,640][Environment:100] Client environment:java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\
+[INFO ][20171108 14:17:13,641][Environment:100] Client environment:java.compiler=<NA>
+[INFO ][20171108 14:17:13,641][Environment:100] Client environment:os.name=Windows 7
+[INFO ][20171108 14:17:13,641][Environment:100] Client environment:os.arch=amd64
+[INFO ][20171108 14:17:13,643][Environment:100] Client environment:os.version=6.1
+[INFO ][20171108 14:17:13,643][Environment:100] Client environment:user.name=Administrator
+[INFO ][20171108 14:17:13,644][Environment:100] Client environment:user.home=C:\Users\Administrator
+[INFO ][20171108 14:17:13,645][Environment:100] Client environment:user.dir=E:\kay_project\dubbox+rest\duboo-hello\dubbo-hello-user-provider\target
+[INFO ][20171108 14:17:13,646][ZooKeeper:438] Initiating client connection, connectString=172.16.10.135:2184 sessionTimeout=60000 watcher=org.I0Itec.zkclient.ZkClient@4ce1d6d0
+[INFO ][20171108 14:17:13,679][ClientCnxn$SendThread:975] Opening socket connection to server 172.16.10.135/172.16.10.135:2184. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20171108 14:17:13,681][ClientCnxn$SendThread:852] Socket connection established to 172.16.10.135/172.16.10.135:2184, initiating session
+[INFO ][20171108 14:17:14,647][ClientCnxn$SendThread:1235] Session establishment complete on server 172.16.10.135/172.16.10.135:2184, sessionid = 0x15f9b1c80e80001, negotiated timeout = 40000
+[INFO ][20171108 14:17:14,650][ZkClient:449] zookeeper state changed (SyncConnected)
+[INFO ][20171108 14:17:14,657][AbstractRegistry:302]  [DUBBO] Register: rest://172.16.10.134:8888/restDemo/com.emep.dubbo.demo.service.UserService?accepts=500&anyhost=true&application=demo-provider&dubbo=2.8.4&extension=com.alibaba.dubbo.rpc.protocol.rest.support.LoggingFilter&generic=false&interface=com.emep.dubbo.demo.service.UserService&methods=getUsers,getUser&organization=dubbox&owner=programmer&pid=10196&revision=0.0.1-SNAPSHOT&server=tomcat&side=provider&threads=500&timestamp=1510121832226&validation=true, dubbo version: 2.8.4, current host: 127.0.0.1
+[INFO ][20171108 14:17:14,781][AbstractRegistry:325]  [DUBBO] Subscribe: provider://172.16.10.134:8888/restDemo/com.emep.dubbo.demo.service.UserService?accepts=500&anyhost=true&application=demo-provider&category=configurators&check=false&dubbo=2.8.4&extension=com.alibaba.dubbo.rpc.protocol.rest.support.LoggingFilter&generic=false&interface=com.emep.dubbo.demo.service.UserService&methods=getUsers,getUser&organization=dubbox&owner=programmer&pid=10196&revision=0.0.1-SNAPSHOT&server=tomcat&side=provider&threads=500&timestamp=1510121832226&validation=true, dubbo version: 2.8.4, current host: 127.0.0.1
+[INFO ][20171108 14:17:14,887][AbstractRegistry:422]  [DUBBO] Notify urls for subscribe url provider://172.16.10.134:8888/restDemo/com.emep.dubbo.demo.service.UserService?accepts=500&anyhost=true&application=demo-provider&category=configurators&check=false&dubbo=2.8.4&extension=com.alibaba.dubbo.rpc.protocol.rest.support.LoggingFilter&generic=false&interface=com.emep.dubbo.demo.service.UserService&methods=getUsers,getUser&organization=dubbox&owner=programmer&pid=10196&revision=0.0.1-SNAPSHOT&server=tomcat&side=provider&threads=500&timestamp=1510121832226&validation=true, urls: [empty://172.16.10.134:8888/restDemo/com.emep.dubbo.demo.service.UserService?accepts=500&anyhost=true&application=demo-provider&category=configurators&check=false&dubbo=2.8.4&extension=com.alibaba.dubbo.rpc.protocol.rest.support.LoggingFilter&generic=false&interface=com.emep.dubbo.demo.service.UserService&methods=getUsers,getUser&organization=dubbox&owner=programmer&pid=10196&revision=0.0.1-SNAPSHOT&server=tomcat&side=provider&threads=500&timestamp=1510121832226&validation=true], dubbo version: 2.8.4, current host: 127.0.0.1
+[INFO ][20171108 14:17:14,904][Main:81]  [DUBBO] Dubbo SpringContainer started!, dubbo version: 2.8.4, current host: 127.0.0.1
+[INFO ][20171108 14:17:29,601][LoggingFilter:97]  [DUBBO] The HTTP headers are: 
+accept: application/json, text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+accept-encoding: gzip, deflate
+accept-language: zh-CN,zh;q=0.8
+connection: keep-alive
+host: 172.16.10.134:8888
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36
+, dubbo version: 2.8.4, current host: 127.0.0.1
+[INFO ][20171108 14:17:29,610][Version:24] Hibernate Validator 4.2.0.Final
+[INFO ][20171108 14:17:29,690][LoggingFilter:97]  [DUBBO] The HTTP headers are: 
+Content-Type: application/json;charset=UTF-8
+, dubbo version: 2.8.4, current host: 127.0.0.1
+[INFO ][20171108 14:17:29,959][LoggingFilter:82]  [DUBBO] The contents of response body is: 
+{"id":100,"username":"Tomcat100"}
+, dubbo version: 2.8.4, current host: 127.0.0.1
+[WARN ][20171108 14:17:30,095][Log4jLogger:135] failed to execute
+javax.ws.rs.NotFoundException: Could not find resource for full path: http://172.16.10.134:8888/favicon.ico
+	at org.jboss.resteasy.core.registry.ClassNode.match(ClassNode.java:73)
+	at org.jboss.resteasy.core.registry.RootClassNode.match(RootClassNode.java:48)
+	at org.jboss.resteasy.core.ResourceMethodRegistry.getResourceInvoker(ResourceMethodRegistry.java:444)
+	at org.jboss.resteasy.core.SynchronousDispatcher.getInvoker(SynchronousDispatcher.java:234)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:171)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:220)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at com.alibaba.dubbo.rpc.protocol.rest.DubboHttpServer$RestHandler.handle(DubboHttpServer.java:86)
+	at com.alibaba.dubbo.remoting.http.servlet.DispatcherServlet.service(DispatcherServlet.java:64)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+[INFO ][20171108 14:17:30,102][LoggingFilter:97]  [DUBBO] The HTTP headers are: 
+, dubbo version: 2.8.4, current host: 127.0.0.1
+[INFO ][20171108 14:24:47,056][LoggingFilter:97]  [DUBBO] The HTTP headers are: 
+accept: application/json, text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+accept-encoding: gzip, deflate
+accept-language: zh-CN,zh;q=0.8
+cache-control: max-age=0
+connection: keep-alive
+host: 172.16.10.134:8888
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36
+, dubbo version: 2.8.4, current host: 127.0.0.1
+[INFO ][20171108 14:24:47,058][LoggingFilter:97]  [DUBBO] The HTTP headers are: 
+Content-Type: application/json;charset=UTF-8
+, dubbo version: 2.8.4, current host: 127.0.0.1
+[INFO ][20171108 14:24:47,060][LoggingFilter:82]  [DUBBO] The contents of response body is: 
+{"id":100,"username":"Tomcat100"}
+, dubbo version: 2.8.4, current host: 127.0.0.1
+[INFO ][20171108 14:24:47,566][LoggingFilter:97]  [DUBBO] The HTTP headers are: 
+accept: application/json, text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+accept-encoding: gzip, deflate
+accept-language: zh-CN,zh;q=0.8
+cache-control: max-age=0
+connection: keep-alive
+host: 172.16.10.134:8888
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36
+, dubbo version: 2.8.4, current host: 127.0.0.1
+[INFO ][20171108 14:24:47,575][LoggingFilter:97]  [DUBBO] The HTTP headers are: 
+Content-Type: application/json;charset=UTF-8
+, dubbo version: 2.8.4, current host: 127.0.0.1
+[INFO ][20171108 14:24:47,576][LoggingFilter:82]  [DUBBO] The contents of response body is: 
+{"id":100,"username":"Tomcat100"}
+, dubbo version: 2.8.4, current host: 127.0.0.1
+[INFO ][20171108 14:24:47,848][LoggingFilter:97]  [DUBBO] The HTTP headers are: 
+accept: application/json, text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+accept-encoding: gzip, deflate
+accept-language: zh-CN,zh;q=0.8
+cache-control: max-age=0
+connection: keep-alive
+host: 172.16.10.134:8888
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36
+, dubbo version: 2.8.4, current host: 127.0.0.1
+[INFO ][20171108 14:24:47,851][LoggingFilter:97]  [DUBBO] The HTTP headers are: 
+Content-Type: application/json;charset=UTF-8
+, dubbo version: 2.8.4, current host: 127.0.0.1
+[INFO ][20171108 14:24:47,853][LoggingFilter:82]  [DUBBO] The contents of response body is: 
+{"id":100,"username":"Tomcat100"}
+, dubbo version: 2.8.4, current host: 127.0.0.1
+[INFO ][20171108 14:24:48,156][LoggingFilter:97]  [DUBBO] The HTTP headers are: 
+accept: application/json, text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+accept-encoding: gzip, deflate
+accept-language: zh-CN,zh;q=0.8
+cache-control: max-age=0
+connection: keep-alive
+host: 172.16.10.134:8888
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36
+, dubbo version: 2.8.4, current host: 127.0.0.1
+[INFO ][20171108 14:24:48,161][LoggingFilter:97]  [DUBBO] The HTTP headers are: 
+Content-Type: application/json;charset=UTF-8
+, dubbo version: 2.8.4, current host: 127.0.0.1
+[INFO ][20171108 14:24:48,163][LoggingFilter:82]  [DUBBO] The contents of response body is: 
+{"id":100,"username":"Tomcat100"}
+, dubbo version: 2.8.4, current host: 127.0.0.1
+[INFO ][20171108 14:24:48,371][LoggingFilter:97]  [DUBBO] The HTTP headers are: 
+accept: application/json, text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+accept-encoding: gzip, deflate
+accept-language: zh-CN,zh;q=0.8
+cache-control: max-age=0
+connection: keep-alive
+host: 172.16.10.134:8888
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36
+, dubbo version: 2.8.4, current host: 127.0.0.1
+[INFO ][20171108 14:24:48,376][LoggingFilter:97]  [DUBBO] The HTTP headers are: 
+Content-Type: application/json;charset=UTF-8
+, dubbo version: 2.8.4, current host: 127.0.0.1
+[INFO ][20171108 14:24:48,379][LoggingFilter:82]  [DUBBO] The contents of response body is: 
+{"id":100,"username":"Tomcat100"}
+, dubbo version: 2.8.4, current host: 127.0.0.1
+[INFO ][20171108 14:24:48,539][LoggingFilter:97]  [DUBBO] The HTTP headers are: 
+accept: application/json, text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+accept-encoding: gzip, deflate
+accept-language: zh-CN,zh;q=0.8
+cache-control: max-age=0
+connection: keep-alive
+host: 172.16.10.134:8888
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36
+, dubbo version: 2.8.4, current host: 127.0.0.1
+[INFO ][20171108 14:24:48,542][LoggingFilter:97]  [DUBBO] The HTTP headers are: 
+Content-Type: application/json;charset=UTF-8
+, dubbo version: 2.8.4, current host: 127.0.0.1
+[INFO ][20171108 14:24:48,543][LoggingFilter:82]  [DUBBO] The contents of response body is: 
+{"id":100,"username":"Tomcat100"}
+, dubbo version: 2.8.4, current host: 127.0.0.1
+[INFO ][20171108 14:24:48,678][LoggingFilter:97]  [DUBBO] The HTTP headers are: 
+accept: application/json, text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+accept-encoding: gzip, deflate
+accept-language: zh-CN,zh;q=0.8
+cache-control: max-age=0
+connection: keep-alive
+host: 172.16.10.134:8888
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36
+, dubbo version: 2.8.4, current host: 127.0.0.1
+[INFO ][20171108 14:24:48,680][LoggingFilter:97]  [DUBBO] The HTTP headers are: 
+Content-Type: application/json;charset=UTF-8
+, dubbo version: 2.8.4, current host: 127.0.0.1
+[INFO ][20171108 14:24:48,682][LoggingFilter:82]  [DUBBO] The contents of response body is: 
+{"id":100,"username":"Tomcat100"}
+, dubbo version: 2.8.4, current host: 127.0.0.1
+[INFO ][20171108 14:24:48,880][LoggingFilter:97]  [DUBBO] The HTTP headers are: 
+accept: application/json, text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+accept-encoding: gzip, deflate
+accept-language: zh-CN,zh;q=0.8
+cache-control: max-age=0
+connection: keep-alive
+host: 172.16.10.134:8888
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36
+, dubbo version: 2.8.4, current host: 127.0.0.1
+[INFO ][20171108 14:24:48,883][LoggingFilter:97]  [DUBBO] The HTTP headers are: 
+Content-Type: application/json;charset=UTF-8
+, dubbo version: 2.8.4, current host: 127.0.0.1
+[INFO ][20171108 14:24:48,885][LoggingFilter:82]  [DUBBO] The contents of response body is: 
+{"id":100,"username":"Tomcat100"}
+, dubbo version: 2.8.4, current host: 127.0.0.1
+[INFO ][20171108 14:24:49,047][LoggingFilter:97]  [DUBBO] The HTTP headers are: 
+accept: application/json, text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+accept-encoding: gzip, deflate
+accept-language: zh-CN,zh;q=0.8
+cache-control: max-age=0
+connection: keep-alive
+host: 172.16.10.134:8888
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36
+, dubbo version: 2.8.4, current host: 127.0.0.1
+[INFO ][20171108 14:24:49,049][LoggingFilter:97]  [DUBBO] The HTTP headers are: 
+Content-Type: application/json;charset=UTF-8
+, dubbo version: 2.8.4, current host: 127.0.0.1
+[INFO ][20171108 14:24:49,050][LoggingFilter:82]  [DUBBO] The contents of response body is: 
+{"id":100,"username":"Tomcat100"}
+, dubbo version: 2.8.4, current host: 127.0.0.1
+[INFO ][20171108 14:24:49,249][LoggingFilter:97]  [DUBBO] The HTTP headers are: 
+accept: application/json, text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+accept-encoding: gzip, deflate
+accept-language: zh-CN,zh;q=0.8
+cache-control: max-age=0
+connection: keep-alive
+host: 172.16.10.134:8888
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36
+, dubbo version: 2.8.4, current host: 127.0.0.1
+[INFO ][20171108 14:24:49,258][LoggingFilter:97]  [DUBBO] The HTTP headers are: 
+Content-Type: application/json;charset=UTF-8
+, dubbo version: 2.8.4, current host: 127.0.0.1
+[INFO ][20171108 14:24:49,260][LoggingFilter:82]  [DUBBO] The contents of response body is: 
+{"id":100,"username":"Tomcat100"}
+, dubbo version: 2.8.4, current host: 127.0.0.1
+[WARN ][20171108 14:28:55,601][Log4jLogger:135] failed to execute
+javax.ws.rs.NotFoundException: Could not find resource for full path: http://172.16.10.134:8888/restDemo/users/0.1
+	at org.jboss.resteasy.core.registry.SegmentNode.match(SegmentNode.java:112)
+	at org.jboss.resteasy.core.registry.RootNode.match(RootNode.java:43)
+	at org.jboss.resteasy.core.registry.RootClassNode.match(RootClassNode.java:48)
+	at org.jboss.resteasy.core.ResourceMethodRegistry.getResourceInvoker(ResourceMethodRegistry.java:444)
+	at org.jboss.resteasy.core.SynchronousDispatcher.getInvoker(SynchronousDispatcher.java:234)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:171)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:220)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at com.alibaba.dubbo.rpc.protocol.rest.DubboHttpServer$RestHandler.handle(DubboHttpServer.java:86)
+	at com.alibaba.dubbo.remoting.http.servlet.DispatcherServlet.service(DispatcherServlet.java:64)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+[INFO ][20171108 14:28:55,605][LoggingFilter:97]  [DUBBO] The HTTP headers are: 
+, dubbo version: 2.8.4, current host: 127.0.0.1
+[WARN ][20171108 14:28:58,655][Log4jLogger:135] failed to execute
+javax.ws.rs.NotFoundException: Could not find resource for full path: http://172.16.10.134:8888/restDemo/users/0.1
+	at org.jboss.resteasy.core.registry.SegmentNode.match(SegmentNode.java:112)
+	at org.jboss.resteasy.core.registry.RootNode.match(RootNode.java:43)
+	at org.jboss.resteasy.core.registry.RootClassNode.match(RootClassNode.java:48)
+	at org.jboss.resteasy.core.ResourceMethodRegistry.getResourceInvoker(ResourceMethodRegistry.java:444)
+	at org.jboss.resteasy.core.SynchronousDispatcher.getInvoker(SynchronousDispatcher.java:234)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:171)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:220)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at com.alibaba.dubbo.rpc.protocol.rest.DubboHttpServer$RestHandler.handle(DubboHttpServer.java:86)
+	at com.alibaba.dubbo.remoting.http.servlet.DispatcherServlet.service(DispatcherServlet.java:64)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+[INFO ][20171108 14:28:58,657][LoggingFilter:97]  [DUBBO] The HTTP headers are: 
+, dubbo version: 2.8.4, current host: 127.0.0.1
+[WARN ][20171108 14:28:59,505][Log4jLogger:135] failed to execute
+javax.ws.rs.NotFoundException: Could not find resource for full path: http://172.16.10.134:8888/restDemo/users/0.1
+	at org.jboss.resteasy.core.registry.SegmentNode.match(SegmentNode.java:112)
+	at org.jboss.resteasy.core.registry.RootNode.match(RootNode.java:43)
+	at org.jboss.resteasy.core.registry.RootClassNode.match(RootClassNode.java:48)
+	at org.jboss.resteasy.core.ResourceMethodRegistry.getResourceInvoker(ResourceMethodRegistry.java:444)
+	at org.jboss.resteasy.core.SynchronousDispatcher.getInvoker(SynchronousDispatcher.java:234)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:171)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:220)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at com.alibaba.dubbo.rpc.protocol.rest.DubboHttpServer$RestHandler.handle(DubboHttpServer.java:86)
+	at com.alibaba.dubbo.remoting.http.servlet.DispatcherServlet.service(DispatcherServlet.java:64)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+[INFO ][20171108 14:28:59,507][LoggingFilter:97]  [DUBBO] The HTTP headers are: 
+, dubbo version: 2.8.4, current host: 127.0.0.1
+[INFO ][20171108 14:29:04,395][LoggingFilter:97]  [DUBBO] The HTTP headers are: 
+accept: application/json, text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+accept-encoding: gzip, deflate
+accept-language: zh-CN,zh;q=0.8
+connection: keep-alive
+host: 172.16.10.134:8888
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36
+, dubbo version: 2.8.4, current host: 127.0.0.1
+[INFO ][20171108 14:29:04,398][LoggingFilter:97]  [DUBBO] The HTTP headers are: 
+Content-Type: application/json;charset=UTF-8
+, dubbo version: 2.8.4, current host: 127.0.0.1
+[INFO ][20171108 14:29:04,401][LoggingFilter:82]  [DUBBO] The contents of response body is: 
+{"id":1,"username":"Tomcat1"}
+, dubbo version: 2.8.4, current host: 127.0.0.1
+[WARN ][20171108 14:29:13,187][Log4jLogger:135] failed to execute
+javax.ws.rs.NotFoundException: Could not find resource for full path: http://172.16.10.134:8888/restDemo/users/0.1
+	at org.jboss.resteasy.core.registry.SegmentNode.match(SegmentNode.java:112)
+	at org.jboss.resteasy.core.registry.RootNode.match(RootNode.java:43)
+	at org.jboss.resteasy.core.registry.RootClassNode.match(RootClassNode.java:48)
+	at org.jboss.resteasy.core.ResourceMethodRegistry.getResourceInvoker(ResourceMethodRegistry.java:444)
+	at org.jboss.resteasy.core.SynchronousDispatcher.getInvoker(SynchronousDispatcher.java:234)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:171)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:220)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at com.alibaba.dubbo.rpc.protocol.rest.DubboHttpServer$RestHandler.handle(DubboHttpServer.java:86)
+	at com.alibaba.dubbo.remoting.http.servlet.DispatcherServlet.service(DispatcherServlet.java:64)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+[INFO ][20171108 14:29:13,194][LoggingFilter:97]  [DUBBO] The HTTP headers are: 
+, dubbo version: 2.8.4, current host: 127.0.0.1
+[INFO ][20171108 14:30:47,766][LoggingFilter:97]  [DUBBO] The HTTP headers are: 
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+accept-encoding: gzip, deflate
+accept-language: zh-CN,zh;q=0.8
+connection: keep-alive
+host: 172.16.10.134:8888
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36
+, dubbo version: 2.8.4, current host: 127.0.0.1
+[INFO ][20171108 14:30:47,771][LoggingFilter:97]  [DUBBO] The HTTP headers are: 
+Content-Type: application/json;charset=UTF-8
+, dubbo version: 2.8.4, current host: 127.0.0.1
+[INFO ][20171108 14:30:47,774][LoggingFilter:82]  [DUBBO] The contents of response body is: 
+{"id":1001,"username":"Tomcat1001"}
+, dubbo version: 2.8.4, current host: 127.0.0.1
+[WARN ][20171108 14:44:39,119][Log4jLogger:135] failed to execute
+javax.ws.rs.NotFoundException: Could not find resource for full path: http://localhost:8888/services/users/100
+	at org.jboss.resteasy.core.registry.ClassNode.match(ClassNode.java:73)
+	at org.jboss.resteasy.core.registry.RootClassNode.match(RootClassNode.java:48)
+	at org.jboss.resteasy.core.ResourceMethodRegistry.getResourceInvoker(ResourceMethodRegistry.java:444)
+	at org.jboss.resteasy.core.SynchronousDispatcher.getInvoker(SynchronousDispatcher.java:234)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:171)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:220)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at com.alibaba.dubbo.rpc.protocol.rest.DubboHttpServer$RestHandler.handle(DubboHttpServer.java:86)
+	at com.alibaba.dubbo.remoting.http.servlet.DispatcherServlet.service(DispatcherServlet.java:64)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+[INFO ][20171108 14:44:39,126][LoggingFilter:97]  [DUBBO] The HTTP headers are: 
+, dubbo version: 2.8.4, current host: 127.0.0.1
