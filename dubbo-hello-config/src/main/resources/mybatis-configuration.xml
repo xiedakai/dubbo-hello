@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+	<settings>
+		<!-- print mybatis'sql sentences in console    author:mpc-->
+		<setting name="logImpl" value="STDOUT_LOGGING" />
+	</settings>
+	
+		<!-- the plugin used for pagation,while the method end with ListPage. author:mpc -->
+	<plugins>
+		<plugin interceptor="com.emep.dubbo.demo.utils.PagePlugin">
+			<property name="dialect" value="mysql" />
+			<property name="pageSqlId" value=".*ListPage.*" />
+		</plugin>
+	</plugins>
+
+
+</configuration>
