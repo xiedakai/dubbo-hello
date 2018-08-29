@@ -19,7 +19,7 @@
 	
 	<groupId>dubbo-demo</groupId>
 	<artifactId>dubbo-hello</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.5</version>
 	<packaging>pom</packaging>
 	<name>${project.artifactId}</name>
 	<description>dubbo-hello parent</description>
